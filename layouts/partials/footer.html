@@ -2,12 +2,18 @@
   <div class="footer__inner">
     {{ if $.Site.Copyright }}
       <div class="copyright copyright--user">
-        <span>{{ $.Site.Copyright | safeHTML }}</span>
+        <span>
+          {{ $.Site.Copyright | safeHTML }}
+          <a href="https://github.com/logan-connolly">
+            <i class="fab fa-fab fa-github"></i>
+          </a>
+        </span>
     {{else}}
       <div class="copyright">
         <span>© {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo</a></span>
     {{end}}
-        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+        <span>
+        </span>
       </div>
   </div>
 </footer>
